@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!--
+TODO:
+1.Enter your name in h1 and designation in h3
+2.Replace all the placeholder images with suitable images of the same size reflecting you and your projects.Feel free to use the sample images provided
+3.Replace the content of headings App1,App2,App3,App4 with suitable headings of your projects & provide their github links in the corresponding links
+4.Make all the elements in the page responsive & align its content as shown in the output sample with the aforementioned using bootstrap
+
+-->
+
+<html lang="en">
+<head>
+    <title>ICP3-RWD Task</title>
+    <meta charset="utf-8">
+    <!--CDN INSTALLED BELOW HERE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/tdctkz/Web_ICP3/main/sources/Bootstrap/bootstrap.min.css">
+    <script src="https://raw.githubusercontent.com/tdctkz/Web_ICP3/main/sources/Bootstrap/bootstrap.min.js"></script>
+    <!--font accessibility here-->
+    <link rel=stylesheet" href=https://fonts.googleapis.cm/css? font-family="play"><!--used to allow the play font to be accessible for bootstrap-->
+    <!--adjusting styles for headers, font, and color here-->
+    <style>
+        body{
+            font-family: Play, sans-serif;/*nothing looked exact from the list you provided. Opted to just use play*/
+        }
+        h1{
+            color:#dc3545/*changes the color for h1 */
+        }
+        h3{
+            color:#f0ad4e/*changes the color for h1 and h3*/
+        }
+        h2{
+            color:#c4e3f3/*changes the color for h2*/
+        }
+        h3{
+            text-align: right;
+        }
+
+    </style>
+</head>
+
+<body>
+<div>
+    <div class="container">
+        <!--inserting a table with 2 columns for the image, name and designation-->
+        <table class="table">
+            <thead>
+            <tr>
+                <!--create a 100*100 image as the first column of the table head-->
+                <th><img src="https://github.com/tdctkz/Web_ICP3/blob/main/documents/avatar.JPG?raw=true"
+                         class="img-responsive" alt="Avatar" width="100" height="100">
+                <th>
+                    <!--create a secondary column head for the table-->
+                    <h1 class = "text-right" >TOAN CHU<br></h1>
+                    <h3 class = "text-right">UMKC Computer Science Student</h3>
+                </th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<div>
+    <img src="https://github.com/tdctkz/Web_ICP3/blob/main/documents/Techology.png?raw=true"
+         class="img-responsive" alt="Technology" width="1140" height="350">>
+</div>
+<div>
+    <h2>Featured Work </h2>
+</div>
+<div class = "container"><!--using predefined classes from bootstrap to arrange the bottom row of images-->
+    <div class="col-md-3"><!--used to place all the images on the same row-->
+        <!--CHANGING FROM DEFAULT IMAGE SIZE TO MAKE IT MATCH OTHER IMAGES-->
+        <img src="https://github.com/tdctkz/Web_ICP3/blob/main/documents/App1.jpg?raw=true" class="img-responsive" alt="app 1" width="555" height="300">
+        <h3>TESLA</h3>
+        <p><a href="https://github.com/tdctkz/Web_ICP3/blob/main/documents/App1.jpg">https://github.com/tdctkz/Web_ICP3</a></p>
+    </div>
+    <div class="col-md-3">
+        <img src="https://github.com/tdctkz/Web_ICP3/blob/main/documents/App2.jpg?raw=true" class="img-responsive" alt="app 2" width="555" height="300">
+        <h3>APPLE</h3>
+        <p><a href="https://github.com/tdctkz/Web_ICP3/blob/main/documents/App2.jpg">https://github.com/tdctkz/Web_ICP3</a></p>
+    </div>
+    <div class="col-md-3">
+        <img src="https://github.com/tdctkz/Web_ICP3/blob/main/documents/App3.jpg?raw=true" class="img-responsive" alt="app 3" width="555" height="300">
+        <h3>FACEBOOK</h3>
+        <p><a href="https://github.com/tdctkz/Web_ICP3/blob/main/documents/App3.jpg">https://github.com/tdctkz/Web_ICP3</a></p>
+    </div>
+    <div class="col-md-3">
+        <img src="https://github.com/tdctkz/Web_ICP3/blob/main/documents/App4.png?raw=true" class="img-responsive" alt="app 4" width="555" height="300">
+        <h3>GITHUB</h3>
+        <p><a href="https://github.com/tdctkz/Web_ICP3/blob/main/documents/App4.png">https://github.com/tdctkz/Web_ICP3</a></p>
+    </div>
+</div>
+
+</body>
+</html>
